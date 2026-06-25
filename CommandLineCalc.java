@@ -10,5 +10,26 @@ public class CommandLineCalc{
         if (operations.equals("add")){
             System.out.println("Addition of two numbers"+ (num1 + num2));
         }
+        else if(operations.equals("sub")){
+            int result = num1 - num2;
+            System.out.println("result = "+result);
+        }
+        else if(operations.equals("mul")){
+            int result = num1 * num2;
+            System.out.println("result = "+result); // here i am also using local variable concept
+        }
+        else if(operations.equals("div")){
+            if(num2 == 0){
+                System.out.println("Error cant divide with 0");
+            }
+            else{
+            int result = num1 / num2 ;
+            System.out.println("Result:"+result);
+            }
+        }
+        else{
+            System.out.println("Unknown operations"+operations+"use add,sub,mul,div to execute this.");
+        }
+
     }
 }
